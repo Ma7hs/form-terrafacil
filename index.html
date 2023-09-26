@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./radio.css">
+    <script src="main.js" defer></script>
+    <title>Registraion Form</title>
+</head>
+
+<body>
+    <header>
+        <img src="./icons8-tree-48.png" alt="icon">
+        <h1>Terra Fácil</h1>
+    </header>
+    <form action="#" class="form">
+        <div class="progressbar">
+            <div class="progress" id="progress"></div>
+            <div class="progress-step progress-step-active" data-title="Intro"></div>
+            <div class="progress-step" data-title="Tipo"></div>
+            <div class="progress-step" data-title="Valor"></div>
+            <div class="progress-step" data-title="Finalidade"></div>
+            <div class="progress-step" data-title="Crédito"></div>
+        </div>
+
+        <div class="form-step form-step-active">
+            <div class="input-group">
+                <label for="username">Nome</label>
+                <input type="text" name="username" id="username" />
+            </div>
+            <div class="input-group">
+                <label for="document">CPF</label>
+                <input type="text" name="document" id="document" />
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" />
+            </div>
+            <div class="">
+                <a href="#" class="btn btn-next width-50 ml-auto">Próximo</a>
+            </div>
+        </div>
+        <div class="form-step">
+            <h1>Tipo de garantia</h1>
+            <div class="input-group">
+                <input id="r1" type="radio" name="radio-step-1" value="ímovel">
+                <label for="r1">Ímovel</label>
+            </div>
+            <div class="input-group">
+                <input id="r2" type="radio" name="radio-step-1" value="Veículo">
+                <label for="r2">Veículo</label>
+            </div>
+            <div class="input-group">
+                <input id="r3" type="radio" name="radio-step-1" value="Terreno">
+                <label for="r3">Terreno</label>
+            </div>
+            <div class="input-group">
+                <input id="r4" type="radio" name="radio-step-1" value="FGTS">
+                <label for="r4">FGTS</label>
+            </div>
+            <div class="input-group">
+                <input id="r5" type="radio" name="radio-step-1" value="Bens_de_valor">
+                <label for="r5">Bens de Valor</label>
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-prev">Anterior</a>
+                <a href="#" class="btn btn-next">Próximo</a>
+            </div>
+        </div>
+        <div class="form-step">
+            <div class="input-group">
+                <label for="value">Valor da garantia</label>
+                <input type="text" name="value" id="value" />
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-prev">Anterior</a>
+                <a href="#" class="btn btn-next">Próximo</a>
+            </div>
+        </div>
+        <div class="form-step">
+            <h1>Finalidade do crédito</h1>
+            <div class="input-group">
+                <input id="r1" type="radio" name="radio-step-2" value="Custeio">
+                <label for="r1">Custeio</label>
+            </div>
+            <div class="input-group">
+                <input id="r2" type="radio" name="radio-step-2" value="Investimento">
+                <label for="r2">Investimento</label>
+            </div>
+            <div class="input-group">
+                <input id="r3" type="radio" name="radio-step-2" value="Comercialização">
+                <label for="r3">Comercialização</label>
+            </div>
+            <div class="input-group">
+                <input id="r4" type="radio" name="radio-step-2" value="Industrialização">
+                <label for="r4">Industrialização</label>
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-prev">Anterior</a>
+                <a href="#" class="btn btn-next">Próximo</a>
+            </div>
+        </div>
+        <div class="form-step">
+            <div class="input-group">
+                <label for="credit">Quantidade de crédito</label>
+                <input type="text" name="credit" id="credit" />
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-prev">Anterior</a>
+                <input type="submit" value="Enviar" class="btn" />
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
