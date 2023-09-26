@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./radio.css">
     <script src="main.js" defer></script>
-    <title>Registraion Form</title>
+    <title>Registration Form</title>
 </head>
-
 <body>
     <header>
         <img src="./icons8-tree-48.png" alt="icon">
@@ -31,9 +29,14 @@
                 <label for="username">Nome</label>
                 <input type="text" name="username" id="username" />
             </div>
+            <select name="document" id="document">
+                <option>Tipo documento</option>
+                <option value="CPF"> CPF </option>
+                <option value="CNPJ"> CNPJ </option>
+            </select>
             <div class="input-group">
-                <label for="document">CPF</label>
-                <input type="text" name="document" id="document" />
+                <label for="document_number">Número do documento</label>
+                <input type="text" name="document_number" id="document_number" />
             </div>
             <div class="input-group">
                 <label for="email">Email</label>
@@ -83,20 +86,20 @@
         <div class="form-step">
             <h1>Finalidade do crédito</h1>
             <div class="input-group">
-                <input id="r1" type="radio" name="radio-step-2" value="Custeio">
-                <label for="r1">Custeio</label>
+                <input id="r6" type="radio" name="radio-step-2" value="Custeio">
+                <label for="r6">Custeio</label>
             </div>
             <div class="input-group">
-                <input id="r2" type="radio" name="radio-step-2" value="Investimento">
-                <label for="r2">Investimento</label>
+                <input id="r7" type="radio" name="radio-step-2" value="Investimento">
+                <label for="r7">Investimento</label>
             </div>
             <div class="input-group">
-                <input id="r3" type="radio" name="radio-step-2" value="Comercialização">
-                <label for="r3">Comercialização</label>
+                <input id="r8" type="radio" name="radio-step-2" value="Comercialização">
+                <label for="r8">Comercialização</label>
             </div>
             <div class="input-group">
-                <input id="r4" type="radio" name="radio-step-2" value="Industrialização">
-                <label for="r4">Industrialização</label>
+                <input id="r9" type="radio" name="radio-step-2" value="Industrialização">
+                <label for="r9">Industrialização</label>
             </div>
             <div class="btns-group">
                 <a href="#" class="btn btn-prev">Anterior</a>
@@ -115,5 +118,4 @@
         </div>
     </form>
 </body>
-
 </html>
