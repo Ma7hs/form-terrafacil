@@ -172,3 +172,16 @@
   .btn:hover {
     box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
   }
+
+  .text{
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .checkbox{
+    padding: 5px;
+    border: 0.3px solid black;
+    border-radius: 4px;
+    font-size: 15px;
+  }

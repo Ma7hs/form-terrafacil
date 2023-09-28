@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./radio.css">
+    <link rel="icon" href="./icons8-tree-48.png">
     <script src="main.js" defer></script>
-    <title>Registration Form</title>
+    <title>TerraFácil - Consultas</title>
 </head>
 <body>
     <header>
         <img src="./icons8-tree-48.png" alt="icon">
         <h1>Terra Fácil</h1>
     </header>
-    <form action="#" class="form">
+    <form action="#" class="form" id="form">
         <div class="progressbar">
             <div class="progress" id="progress"></div>
             <div class="progress-step progress-step-active" data-title="Intro"></div>
@@ -29,7 +30,7 @@
                 <label for="username">Nome</label>
                 <input type="text" name="username" id="username" />
             </div>
-            <select name="document" id="document">
+            <select name="document" id="document" class="checkbox">
                 <option>Tipo documento</option>
                 <option value="CPF"> CPF </option>
                 <option value="CNPJ"> CNPJ </option>
