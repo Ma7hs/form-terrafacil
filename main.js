@@ -213,7 +213,7 @@ form.addEventListener("submit", async function (e) {
     datahora: new Date().toISOString(),
     nome: username,
     documento: doc,
-    email: email, 
+    email: email,
     tipo_garantia: tipo_garantia  ,
     finalidade_credito: finalidade_credito,
     qtd_credito: Number(credit),
@@ -221,12 +221,12 @@ form.addEventListener("submit", async function (e) {
 
   console.log(userData);
   const sendData = await fetch("http://localhost:5000/usuario", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(userData),
-    });
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(userData),
+  });
 
   const reload = await sendData.json();
 
